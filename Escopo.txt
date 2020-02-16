@@ -1,0 +1,14 @@
+====================================== Escopo do Projeto Spotfy - Cover ====================================== 
+@author: Eduardo Rojas.
+@tecnologias: HTML5, CSS3, BOOSTRAP, jQuerys;
+
+Objetivo do site é exibir conteúdos sobre informações do serviço de streming de musicas, sendo utilizado via navegador ou APP.
+
+====================================================================================================
+Requisitos do Site:
+
+-Barra de Navegação (navbar) contendo: Logo, Links, Botão de Login, e um botão de responvidade;
+-Capa principal (div) contendo: Titulo principal do site, dois botão de acesso;
+-O corpo inteiro do site, irá possuir um fundo degradê com efeito parallax, dando um efeito de fundo fixo.
+-Dois blocos (divs) de conteudo, sendo um de serviços ou o que é Spotfy e outro com imagens de celular rodando o app de musica.
+====================================================================================================

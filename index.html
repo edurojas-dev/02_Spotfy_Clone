@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Spotify - Músicas Legais</title>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="imagens/favicon.png" rel="icon">
+
+     <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+		html, body, .capa {
+		height: 100%;
+		overflow: auto;
+	}
+	
+	.navbar-formatada {
+		padding: 20px 0px;
+		background:rgba(0, 0, 0, 0.6);
+		border: none;
+	}
+	
+	.navbar-brand {
+		padding: 5px 15px;
+	}
+	
+	.imgLogo {
+		height: 40px;
+		width: 132px;
+		display: block;
+		background: url(imagens/spotify.svg);
+		background-size: contain;
+		color: transparent;
+	}
+	
+	body {
+		background: url('imagens/img5.jpg');
+		background-attachment: fixed;
+		font-family: Helvetica,Arial,sans-serif;
+		overflow-x: hidden;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.capa{
+		display: table;
+		width: 100%;
+	}
+	
+	.text-capa{
+		text-align: center;
+		color: white;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	
+	h1{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		font-size: 80px;
+	}
+	
+	.btn-formatado {
+		color: white;
+		border-radius: 500px;
+		text-transform: uppercase;
+		transition: background 0.4s, color 0.4s;
+	}
+	
+	.btn-cor1 {
+		background: #ff5252;
+	
+	}
+	
+	.btn-cor1:hover {
+		background-color: #6207e3;
+		color: black;
+	}
+	
+	.btn-cor2 {
+		border: 2px solid white;
+	}
+	
+	.btn-cor2:hover{
+		background-color: white;
+		color: black;
+	}
+	
+	.rotacionar{
+		transform: rotate(30deg);
+		-ms-transform: rotate(30deg); /* IE 9 */
+		-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+		padding-left: 80px;
+	}
+
+	.footer-formatada {
+		padding: 30px;
+		height: 244px;
+	}
+
+	.lista-formatada li {
+		list-style: none;
+		padding-top: 11px;
+	}
+	.lista-formatada li > a {
+		text-decoration: none;
+		color:azure;
+	}
+
+	.lista-formatada li > a:hover {
+		color:aqua;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		color: #FFFAF0;
+	}
+
+	.navbar-inverse .navbar-nav>li>a:hover {
+		color:aqua;
+	}
+	</style>	
+	<script>
+	 function botao(){
+		 alert('Assinatura Grátis por 30 dias!');
+	 }
+	</script>
+</head>
+
+<body>
+<!-- Inicio: Barra de navegação -->
+	<nav class="navbar navbar-fixed-top navbar-inverse navbar-formatada">
+		<div class="container">
+			<div class="navbar-header"><!-- Logo e Botão -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="SpotifyClone.html" class="navbar-brand">
+					<span class="imgLogo">Spotify</span>
+				</a>
+			</div>
+
+			<div id="links" class="collapse navbar-collapse"><!-- Links -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="SpotifyClone.html" class="color-link">Home</a></li>
+					<li><a href="#" class="color-link">Sobre</a></li>
+					<li><a href="https://www.spotify.com/br/download/windows/" class="color-link" target="_blank">Baixar</a></li>
+					<li><a href="#" class="color-link" data-toggle="modal" data-target="#modal-Cadastro">Inscrever-se</a></li>
+					<li><a href="#" class="color-link" style="border: 1px solid white; border-radius: 10px;" data-toggle="modal" data-target="#modal-Logar">Entrar</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- Fim: Barra de navegação -->
+	
+<!-- Capa Principal -->
+	<div class="capa" style="padding:30px;">
+		<div class="text-capa" >
+			<h1>Música para todos os Estilos</h1>
+
+			<a href="#" class="btn btn-lg btn-formatado btn-cor1" style="padding: 16px; margin: 10px 15px;" onclick="botao();">Aproveite Free</a>
+			<a href="#" class="btn btn-lg btn-formatado btn-cor2" style="padding: 16px; margin: 10px 15px;">Obter Serviços</a>
+		</div>
+	</div>
+<!-- Fim da Capa Principal -->
+
+<!-- Inicio do conteudo #1: Fotos de albuns e informações sobre o Spotify -->
+	<div class="container-fluid" style="background-color:#808080;">
+		<div class="container">
+			<div class="row" style="padding:34px;">
+				<div class="col-sm-6 col-md-6">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-xs-12" style="padding: 4px;">
+							<img src="imagens/img1.jpg" class="img-responsive img-thumbnail">
+						</div>
+						
+						<div class="col-sm-12 col-md-6 col-xs-12" style="padding: 4px;">
+							<img src="imagens/img3.jpg" class="img-responsive img-thumbnail">
+						</div>
+					</div>
+
+					<div class="row" style="padding: 4px;">
+						<div class="col-sm-12 col-md-6 col-xs-12" style="padding: 4px;">
+							<img src="imagens/img4.jpg" class="img-responsive img-thumbnail">
+						</div>
+						
+						<div class="col-sm-12 col-md-6 col-xs-12" style="padding: 4px;">
+							<img src="imagens/img2.jpg" class="img-responsive img-thumbnail">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-6">
+						<h2 style="color: #F0E68C; font-size: 50px; font-weight: 700;  letter-spacing: -0.04em;">
+							O que o Spotify tem?
+						</h2>
+
+						<h3 style="color: #F0E68C; font-size: 30px; letter-spacing: -0.04em;">
+							Músicas
+						</h3>
+						<p>
+							O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.
+						</p>
+
+						<h3 style="color: #F0E68C; font-size: 30px; letter-spacing: -0.04em;">
+							Playlists
+						</h3>
+
+						<p>
+							No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.
+
+						</p>
+
+						<h3 style="color: #F0E68C; font-size: 30px; letter-spacing: -0.04em;">
+							Novos lançamentos
+						</h3>
+						<p>
+							Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Fim do conteudo #1 -->
+<!-- Inicio do conteudo #2: Mais informações de utilidade do Spotify e imagens de Iphone com app aberto. -->
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h2 style="color: white; font-size: 50px; font-weight: 400;">
+					Fácil
+				</h2>
+
+				<h3 style="color: #FFDEAD; font-size: 30px; letter-spacing: -0.04em;">
+					Novos lançamentos
+				</h3>
+				<p style="color: #FFFAF0;">
+					Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50
+				</p>
+
+				<h3 style="color: #FFDEAD; font-size: 30px; letter-spacing: -0.04em;">
+					Navegar
+				</h3>
+				<p style="color: #FFFAF0;">
+					Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.
+				</p>
+
+				<h3 style="color: #FFDEAD; font-size: 30px; letter-spacing: -0.04em;">
+					Descobrir
+				</h3>
+				<p style="color: #FFFAF0;">
+					Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.
+				</p>
+			</div>
+
+			<div class="col-sm-8">
+				<div class="row rotacionar">
+					<div class="col-md-6 col-sm-6">
+						<img src="imagens/iphone1.png" class="img-responsive">
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+						<img src="imagens/iphone3.png" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Fim do conteudo #2 -->
+<div class="container-fluid" style="background-color: #000; margin-top: 100px;">
+	<div class="container footer-formatada">
+		<div class="row">
+			<div class="col-md-2 col-xs-12">
+				<a href="index.html" class="navbar-brand">
+					<span class="imgLogo">Spotify</span>
+				</a>
+			</div>
+			<div class="col-md-2 col-xs-12">
+				<h3 style="color: #919496">Company</h3>
+				<ul class="lista-formatada">
+					<li><a href="projetoSpotify.html"> Sobre </a></li>
+					<li><a href="projetoSpotify.html"> Empregos </a></li>
+					<li><a href="projetoSpotify.html"> Imprensa </a></li>
+					<li><a href="projetoSpotify.html"> Novidades </a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-xs-12">
+				<h3 style="color: #919496">Comunidades</h3>
+				<ul class="lista-formatada">
+					<li><a href="projetoSpotify.html"> Artistas </a></li>
+					<li><a href="https://www.instagram.com/eduardo_rojas.system/" target="_blank"> Desenvolvedor </a></li>
+					<li><a href="projetoSpotify.html"> Marcas </a></li>
+					
+				</ul>
+			</div>
+
+			<div class="col-md-2 col-xs-12">
+				<h3 style="color: #919496">Links Úteis</h3>
+				<ul class="lista-formatada">
+					<li><a href="projetoSpotify.html"> Ajuda </a></li>
+					<li><a href="projetoSpotify.html"> Presentes </a></li>
+					<li><a href="https://itunes.apple.com/br/app/spotify-music/id324684580?mt=8" target="_blank"> App IOS </a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=pt_BR" target="_blank"> App Android </a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-4 col-xs-12" style="">
+				<a href="https://www.facebook.com/SpotifyBrasil/" target="_blank">
+					<img src="imagens/facebook.png"  class="img-responsive" style="float: right; padding-left: 35px;">
+				</a>
+				
+				<a href="https://twitter.com/spotify" target="_blank">
+					<img src="imagens/twitter.png"   class="img-responsive" style="float: right; padding-left: 35px;">
+				</a>
+
+				<a href="https://www.instagram.com/spotifybrasil/" target="_blank">
+					<img src="imagens/instagram.png" class="img-responsive" style="float: right; padding-left: 35px;">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Modal de Login -->
+<div class="modal fade" id="modal-Logar" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header form-group">
+				<button type="button" class="close" data-dismiss="modal">
+					<span>&times;</span>
+				</button>
+				<div class="row">
+					<div class="col-sm-8">
+						<h3 style="float:right;">Efetue seu Login</h3>
+					</div>
+					<div class="col-sm-4">
+						<img src="imagens/favicon.png" class="img-responsive" width="33"> 
+					</div>
+				</div>
+			</div>
+			<div class="modal-body form-group">
+				<form>
+					<div class="form-group">
+						<input type="email" placeholder="Digite seu e-mail ou ID" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="password" placeholder="Digite sua senha" class="form-control">
+					</div>
+				</form>	
+			</div>
+
+			<div class="modal-footer form-group">
+				<button type="submit" class="btn btn-danger" data-dismiss="modal"> Cancelar </button>
+				<button type="submit" class="btn btn-primary"> Entar </button>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal de Cadastrar -->
+<div class="modal fade" id="modal-Cadastro">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="title-modal">Inscreva-se </h2>
+			</div>
+
+			<form class="modal-body">
+					tesste
+			</div>
+			<div class="modal-footer">
+				sdsds
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Configuração para rodar os processos do Bootstrap juntamente com JS -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

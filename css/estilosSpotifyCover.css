@@ -1,0 +1,88 @@
+html, body, .capa {
+	height: 100%;
+	overflow: auto;
+}
+
+
+
+.navbar-formatada {
+	padding: 20px 0px;
+	background:rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.imgLogo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url(file:///E:/Curso_Udemy_ProgramacaoWeb/2_Modulo_Bootstrap/Projeto_Spotfy_Cover/imagens/spotify.svg);
+	background-size: contain;
+	color: transparent;
+}
+
+body {
+	background: url('imagens/img5.jpg'),
+				url('file:///E:/Curso_Udemy_ProgramacaoWeb/2_Modulo_Bootstrap/Projeto_Spotfy_Cover/imagens/ruido.png'),
+				linear-gradient(10deg,#ff4169,white);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.text-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h1{
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	font-size: 80px;
+}
+
+.btn-formatado {
+	color: white;
+	border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-cor1 {
+	background: #ff5252;
+
+}
+
+.btn-cor1:hover {
+	background-color: #6207e3;
+	color: black;
+}
+
+.btn-cor2 {
+	border: 2px solid white;
+}
+
+.btn-cor2:hover{
+	background-color: white;
+	color: black;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    padding-left: 80px;
+}
